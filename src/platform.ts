@@ -6,7 +6,7 @@ import { BadInputError, ResolveSourceImageError } from './error';
 import { ImageSchema, debugSourceImage, generateImage, readSourceImage, resolveSourceImage } from './image';
 import { COLOR_REGEX, ImageSourceData, ResolvedSource, ResourceKey, ResourceKeyValues, ResourceType, ResourcesTypeConfig, Source, SourceType, getResourcesConfig } from './resources';
 
-const debug = Debug('cordova-res:platform');
+const debug = Debug('bridge-res:platform');
 
 export const enum Platform {
   ANDROID = 'android',
@@ -220,6 +220,7 @@ export async function generateImageResource(type: ResourceType, platform: Platfo
 
   const dest = pathlib.join(resourcesDirectory, src);
   await ensureDir(pathlib.dirname(dest));
+
   await generateImage({ src: dest, format, width, height }, pipeline.clone(), metadata, errstream);
 
   return {

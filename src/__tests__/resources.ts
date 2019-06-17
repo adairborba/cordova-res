@@ -1,6 +1,6 @@
 import { isSupportedResourceType } from '../resources';
 
-describe('cordova-res', () => {
+describe('bridge-res', () => {
 
   describe('resources', () => {
 

@@ -1,7 +1,7 @@
 import { generateRunOptions } from '../cli';
 import { Platform } from '../platform';
 
-describe('cordova-res', () => {
+describe('bridge-res', () => {
 
   describe('cli', () => {
 

@@ -7,7 +7,7 @@ import { BadInputError } from './error';
 import { GeneratedResource, Platform } from './platform';
 import { ResolvedColorSource, ResolvedSource, ResourceType, SourceType } from './resources';
 
-const debug = Debug('cordova-res:config');
+const debug = Debug('bridge-res:config');
 
 export async function run(configPath: string, resourcesDirectory: string, sources: ReadonlyArray<ResolvedSource>, resources: ReadonlyArray<GeneratedResource>): Promise<void> {
   const colors = sources.filter((source): source is ResolvedColorSource => source.type === SourceType.COLOR);

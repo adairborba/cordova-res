@@ -6,7 +6,7 @@ import util from 'util';
 import { ResolveSourceImageError, ValidationError } from './error';
 import { Format, RASTER_RESOURCE_VALIDATORS, ResolvedImageSource, ResourceType, SourceType } from './resources';
 
-const debug = Debug('cordova-res:image');
+const debug = Debug('bridge-res:image');
 
 /**
  * Check an array of source files, returning the first viable image.

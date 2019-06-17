@@ -2,7 +2,7 @@
 
 This tool will crop and resize JPEG and PNG source images to generate images for modern iOS and Android devices.
 
-`cordova-res` must run at the root of a Cordova project, such as:
+`bridge-res` must run at the root of a Cordova project, such as:
 
 ```
 resources/
@@ -26,7 +26,7 @@ A color may also be used for the icon background by specifying the `--icon-backg
 ## Install
 
 ```bash
-$ npm install -g cordova-res
+$ npm install -g bridge-res
 ```
 
 ## Usage
@@ -34,17 +34,17 @@ $ npm install -g cordova-res
 See the help documentation on the command line with the `--help` option.
 
 ```bash
-$ cordova-res --help
+$ bridge-res --help
 ```
 
 ### Programmatic API
 
-`cordova-res` can be used programmatically.
+`bridge-res` can be used programmatically.
 
 #### CommonJS Example
 
 ```js
-const run = require('cordova-res');
+const run = require('bridge-res');
 
 await run();
 ```
@@ -54,7 +54,7 @@ await run();
 `run()` takes an options object described by the interface `Options`. If options are provided, resources are generated in an explicit, opt-in manner. In the following example, only Android icons and iOS splash screens are generated.
 
 ```ts
-import { Options, run } from 'cordova-res';
+import { Options, run } from 'bridge-res';
 
 const options: Options = {
   directory: '/path/to/project',

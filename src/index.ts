@@ -7,7 +7,7 @@ import { BaseError } from './error';
 import { GeneratedResource, PLATFORMS, Platform, RunPlatformOptions, run as runPlatform } from './platform';
 import { DEFAULT_RESOURCES_DIRECTORY, Density, Orientation, ResolvedSource, SourceType } from './resources';
 
-const debug = Debug('cordova-res');
+const debug = Debug('bridge-res');
 
 interface Result {
   resources: ResultResource[];
@@ -92,7 +92,7 @@ namespace CordovaRes {
   export const run = CordovaRes;
 
   /**
-   * Options for `cordova-res`.
+   * Options for `bridge-res`.
    *
    * Each key may be excluded to use a provided default.
    */
@@ -100,7 +100,7 @@ namespace CordovaRes {
     /**
      * Operating directory. Usually the root of the project.
      *
-     * `cordova-res` operates in the root of a standard Cordova project setup.
+     * `bridge-res` operates in the root of a standard Cordova project setup.
      * The specified directory should contain `config.xml` and a resources
      * folder, configured via `resourcesDirectory`.
      */

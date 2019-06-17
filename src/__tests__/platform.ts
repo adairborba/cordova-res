@@ -3,7 +3,7 @@ import * as path from 'path';
 import { Platform } from '../platform';
 import { ResourceType, getResourcesConfig } from '../resources';
 
-describe('cordova-res', () => {
+describe('bridge-res', () => {
 
   describe('platform', () => {
 

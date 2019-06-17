@@ -1,5 +1,5 @@
 const help = `
-  Usage: cordova-res [ios|android] [options]
+  Usage: bridge-res [ios|android] [options]
 
     Generate Cordova resources for one or all platforms.
 
